@@ -5,6 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,16 +26,57 @@
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fss-hL-82C">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="121"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign In / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koC-6V-Z04">
+                                        <rect key="frame" x="20" y="35" width="174" height="21"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code-icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="DCi-jy-X92">
+                                        <rect key="frame" x="548" y="30" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="cFq-Ri-LpJ"/>
+                                            <constraint firstAttribute="height" constant="32" id="qGh-1Q-PZn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.5725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="koC-6V-Z04" firstAttribute="top" secondItem="fss-hL-82C" secondAttribute="top" constant="35" id="6ew-aT-J1e"/>
+                                    <constraint firstItem="DCi-jy-X92" firstAttribute="top" secondItem="fss-hL-82C" secondAttribute="top" constant="30" id="MHM-Pd-agc"/>
+                                    <constraint firstItem="koC-6V-Z04" firstAttribute="leading" secondItem="fss-hL-82C" secondAttribute="leading" constant="20" id="UAT-Wp-h6j"/>
+                                    <constraint firstAttribute="trailing" secondItem="DCi-jy-X92" secondAttribute="trailing" constant="20" id="jQk-G6-0lL"/>
                                     <constraint firstAttribute="height" constant="120" id="zTo-54-Cmp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otG-Hb-dfo" customClass="MaterialView" customModule="FirebaseApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="72" width="560" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="xZU-Ir-P8J">
+                                        <rect key="frame" x="20" y="10" width="521" height="108"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="wbE-H8-qfG">
+                                                <rect key="frame" x="0.0" y="22" width="65" height="65"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mse-hb-pdj" customClass="MaterialButton" customModule="FirebaseApp" customModuleProvider="target">
+                                                <rect key="frame" x="105" y="38" width="416" height="33"/>
+                                                <color key="backgroundColor" red="0.21176470588235294" green="0.5725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                                <state key="normal" title="Facebook Login">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xZU-Ir-P8J" secondAttribute="bottom" constant="10" id="TDv-Jj-rhO"/>
+                                    <constraint firstItem="xZU-Ir-P8J" firstAttribute="leading" secondItem="otG-Hb-dfo" secondAttribute="leading" constant="19" id="j0H-Yq-8xf"/>
+                                    <constraint firstItem="xZU-Ir-P8J" firstAttribute="top" secondItem="otG-Hb-dfo" secondAttribute="top" constant="10" id="jWS-3x-MDT"/>
+                                    <constraint firstAttribute="trailing" secondItem="xZU-Ir-P8J" secondAttribute="trailing" constant="20" id="pjj-Rp-20r"/>
                                     <constraint firstAttribute="height" constant="128" id="zgc-68-V8q"/>
                                 </constraints>
                             </view>
@@ -50,4 +97,8 @@
             <point key="canvasLocation" x="311" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="code-icon-logo" width="318" height="281"/>
+        <image name="fb-icon" width="65" height="65"/>
+    </resources>
 </document>
