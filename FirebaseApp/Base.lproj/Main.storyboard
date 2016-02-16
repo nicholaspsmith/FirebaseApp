@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="120" id="zTo-54-Cmp"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otG-Hb-dfo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otG-Hb-dfo" customClass="MaterialView" customModule="FirebaseApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="72" width="560" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
