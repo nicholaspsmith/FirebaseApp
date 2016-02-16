@@ -14,6 +14,7 @@
 		015CA1C01C72E7BE00670E92 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1BF1C72E7BE00670E92 /* MaterialView.swift */; };
 		015CA1C31C72E81500670E92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1C21C72E81500670E92 /* Constants.swift */; };
 		015CA1C51C737EC300670E92 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1C41C737EC300670E92 /* MaterialButton.swift */; };
+		015CA1C71C7380C500670E92 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1C61C7380C500670E92 /* MaterialTextField.swift */; };
 		AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B921C61AD1900ACE70D /* AppDelegate.swift */; };
 		AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B941C61AD1900ACE70D /* ViewController.swift */; };
 		AB529B981C61AD1A00ACE70D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529B961C61AD1A00ACE70D /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		015CA1BF1C72E7BE00670E92 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		015CA1C21C72E81500670E92 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		015CA1C41C737EC300670E92 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		015CA1C61C7380C500670E92 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB529B921C61AD1900ACE70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB529B941C61AD1900ACE70D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				015CA1BF1C72E7BE00670E92 /* MaterialView.swift */,
 				015CA1C41C737EC300670E92 /* MaterialButton.swift */,
+				015CA1C61C7380C500670E92 /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015CA1C71C7380C500670E92 /* MaterialTextField.swift in Sources */,
 				015CA1C01C72E7BE00670E92 /* MaterialView.swift in Sources */,
 				AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */,
 				AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */,
