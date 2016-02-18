@@ -18,6 +18,7 @@
 		015CA1CC1C754FFF00670E92 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1C91C754FFF00670E92 /* FBSDKLoginKit.framework */; };
 		015CA1CD1C754FFF00670E92 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1CA1C754FFF00670E92 /* FBSDKCoreKit.framework */; };
 		015CA1CE1C754FFF00670E92 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1CB1C754FFF00670E92 /* Bolts.framework */; };
+		015CA1D11C7629B100670E92 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1D01C7629B100670E92 /* DataService.swift */; };
 		3DDB6E7FE504C7A4A71D6D52 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B604E625B5886B0B74D2D606 /* Pods_FirebaseApp.framework */; };
 		AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B921C61AD1900ACE70D /* AppDelegate.swift */; };
 		AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B941C61AD1900ACE70D /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		015CA1C91C754FFF00670E92 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		015CA1CA1C754FFF00670E92 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		015CA1CB1C754FFF00670E92 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		015CA1D01C7629B100670E92 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB529B921C61AD1900ACE70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		015CA1CF1C7629A300670E92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				015CA1D01C7629B100670E92 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		6308607933676E6F1BFA6B0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		AB529B911C61AD1900ACE70D /* FirebaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				015CA1CF1C7629A300670E92 /* Services */,
 				015CA1C81C754FEE00670E92 /* Frameworks */,
 				015CA1C11C72E7FF00670E92 /* Util */,
 				AB529BA71C61AD7100ACE70D /* Resources */,
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				015CA1C71C7380C500670E92 /* MaterialTextField.swift in Sources */,
+				015CA1D11C7629B100670E92 /* DataService.swift in Sources */,
 				015CA1C01C72E7BE00670E92 /* MaterialView.swift in Sources */,
 				AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */,
 				AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */,
