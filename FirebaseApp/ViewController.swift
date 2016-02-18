@@ -21,6 +21,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+        }
+    }
 
     @IBAction func fbBtnPressed(sender: UIButton!) {
         let facebookLogin = FBSDKLoginManager()
@@ -40,7 +48,7 @@ class ViewController: UIViewController {
                     } else {
                         print("Logged in. \(authData)")
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
-                        self.performSegueWithIdentifier("loggedIn", sender: nil)
+                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
                     
                 })
