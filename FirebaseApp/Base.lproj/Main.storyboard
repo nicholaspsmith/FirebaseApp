@@ -118,7 +118,7 @@
                                             <constraint firstAttribute="height" constant="35" id="kEY-9F-vdn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-II-Krc" customClass="MaterialButton" customModule="FirebaseApp" customModuleProvider="target">
                                         <rect key="frame" x="174" y="188" width="207" height="33"/>
@@ -131,6 +131,9 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6u5-xK-0uT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,6 +172,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="aIW-kc-bwT" id="eZV-rY-C0S"/>
+                        <outlet property="passwordField" destination="Foi-hy-s7O" id="T7N-rZ-L2n"/>
                         <segue destination="CZu-Vt-5n1" kind="show" identifier="loggedIn" id="0GQ-rC-r2K"/>
                     </connections>
                 </viewController>
