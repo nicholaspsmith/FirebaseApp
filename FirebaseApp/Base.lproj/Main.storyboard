@@ -47,7 +47,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.21176470588235294" green="0.5725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.20392156859999999" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="koC-6V-Z04" firstAttribute="top" secondItem="fss-hL-82C" secondAttribute="top" constant="35" id="6ew-aT-J1e"/>
