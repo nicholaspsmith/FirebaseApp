@@ -33,7 +33,17 @@ class ViewController: UIViewController {
             } else {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 
-                
+                DataService.ds.REF_BASE.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { (error, authData) -> Void in
+                    
+                    if error != nil {
+                        print("Login failed. \(error)")
+                    } else {
+                        print("Logged in. \(authData)")
+                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+                        self.performSegueWithIdentifier("loggedIn", sender: nil)
+                    }
+                    
+                })
             }
         }
         
