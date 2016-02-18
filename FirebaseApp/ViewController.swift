@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func fbBtnPressed(sender: UIButton!) {
         let facebookLogin = FBSDKLoginManager()
         
-        facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) -> Void in
+        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) -> Void in
             if facebookError != nil {
                 print("Facebook login failed. Error: \(facebookError)")
             } else if facebookResult.isCancelled {
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                 print(accessToken)
             }
         }
+        
     }
 
 }
