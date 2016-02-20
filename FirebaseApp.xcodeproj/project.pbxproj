@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0133DACA1C7807F7003EEC0B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133DAC91C7807F7003EEC0B /* FeedVC.swift */; };
 		0133DACC1C78086B003EEC0B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133DACB1C78086B003EEC0B /* PostCell.swift */; };
+		0133DACE1C780E56003EEC0B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133DACD1C780E56003EEC0B /* Post.swift */; };
 		015CA1BB1C72DF3B00670E92 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015CA1B71C72DF3B00670E92 /* NotoSans-Bold.ttf */; };
 		015CA1BC1C72DF3B00670E92 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015CA1B81C72DF3B00670E92 /* NotoSans-BoldItalic.ttf */; };
 		015CA1BD1C72DF3B00670E92 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015CA1B91C72DF3B00670E92 /* NotoSans-Italic.ttf */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		0133DAC91C7807F7003EEC0B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		0133DACB1C78086B003EEC0B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0133DACD1C780E56003EEC0B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		015CA1B71C72DF3B00670E92 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		015CA1B81C72DF3B00670E92 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		015CA1B91C72DF3B00670E92 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		AB529BA61C61AD6B00ACE70D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0133DACD1C780E56003EEC0B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */,
 				015CA1C31C72E81500670E92 /* Constants.swift in Sources */,
 				015CA1C51C737EC300670E92 /* MaterialButton.swift in Sources */,
+				0133DACE1C780E56003EEC0B /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
