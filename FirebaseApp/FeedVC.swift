@@ -28,7 +28,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostCell
     }
 
 
