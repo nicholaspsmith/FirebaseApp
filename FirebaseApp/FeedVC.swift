@@ -85,7 +85,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let post = posts[indexPath.row]
         
         if post.imageUrl == nil {
-            return 200
+            return 150
         } else {
             return tableView.estimatedRowHeight
         }
