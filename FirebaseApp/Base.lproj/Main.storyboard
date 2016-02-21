@@ -232,6 +232,9 @@
                                                 <state key="normal" title="POST">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="makePost:" destination="CZu-Vt-5n1" eventType="touchUpInside" id="A2L-0Y-Xqj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -375,6 +378,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gpx-cb-HIN"/>
                     <connections>
+                        <outlet property="imageSelectorImg" destination="py0-y8-1hJ" id="CEb-gc-ZKr"/>
+                        <outlet property="postField" destination="MpI-at-eWn" id="93J-dC-MP4"/>
                         <outlet property="tableView" destination="1GJ-Fh-SMO" id="TFi-Oz-iMl"/>
                     </connections>
                 </viewController>

@@ -41,15 +41,12 @@ class PostCell: UITableViewCell {
             if img != nil {
                 // Image was passed in from cache
                 self.showcaseImg.image = img
-                print("image was cached")
             } else {
                 request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
                     
                     if err == nil {
                         let img = UIImage(data: data!)!
                         self.showcaseImg.image = img
-                        
-                        print("img was not cached; was set")
                         
                         // Add to cache
                         FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
