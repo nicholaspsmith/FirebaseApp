@@ -104,7 +104,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        self.imageSet = true
+        imageSet = true
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         imageSelectorImg.image = image
     }
@@ -125,7 +125,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 let keyJSON = "json".dataUsingEncoding(NSUTF8StringEncoding)!
                 
                 Alamofire.upload(.POST, url, multipartFormData: { multipartFormData in
-                    
                     multipartFormData.appendBodyPart(data: imgData, name: "fileupload", fileName: "image", mimeType: "image/jpg")
                     multipartFormData.appendBodyPart(data: keyData, name: "key")
                     multipartFormData.appendBodyPart(data: keyJSON, name: "format")
@@ -147,16 +146,33 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                         case .Failure(let error):
                             print(error)
                         }
-                        
-                }
+                }//Alamofire.upload
                 
 
+            } else {
+                self.postToFirebase(nil)
             }
         }
         
     }
     
     func postToFirebase(imgUrl: String?) {
+        var post: Dictionary<String, AnyObject> = [
+            "description": postField.text!,
+            "likes": 0
+        ]
         
+        if imgUrl != nil {
+            post["imageUrl"] = imgUrl!
+        }
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        postField.text = ""
+        imageSelectorImg.image = UIImage(named: "camera")
+        imageSet = false
+        
+        tableView.reloadData()
     }
 }
