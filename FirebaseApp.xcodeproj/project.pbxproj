@@ -22,6 +22,7 @@
 		015CA1CD1C754FFF00670E92 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1CA1C754FFF00670E92 /* FBSDKCoreKit.framework */; };
 		015CA1CE1C754FFF00670E92 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1CB1C754FFF00670E92 /* Bolts.framework */; };
 		015CA1D11C7629B100670E92 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1D01C7629B100670E92 /* DataService.swift */; };
+		01B388F31C7E179600F7FD77 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B388F21C7E179600F7FD77 /* CreateUserVC.swift */; };
 		3DDB6E7FE504C7A4A71D6D52 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B604E625B5886B0B74D2D606 /* Pods_FirebaseApp.framework */; };
 		AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B921C61AD1900ACE70D /* AppDelegate.swift */; };
 		AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B941C61AD1900ACE70D /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		015CA1CA1C754FFF00670E92 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		015CA1CB1C754FFF00670E92 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		015CA1D01C7629B100670E92 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		01B388F21C7E179600F7FD77 /* CreateUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB529B921C61AD1900ACE70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				AB529B941C61AD1900ACE70D /* ViewController.swift */,
 				0133DAC91C7807F7003EEC0B /* FeedVC.swift */,
+				01B388F21C7E179600F7FD77 /* CreateUserVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				0133DACC1C78086B003EEC0B /* PostCell.swift in Sources */,
 				AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */,
 				015CA1C31C72E81500670E92 /* Constants.swift in Sources */,
+				01B388F31C7E179600F7FD77 /* CreateUserVC.swift in Sources */,
 				015CA1C51C737EC300670E92 /* MaterialButton.swift in Sources */,
 				0133DACE1C780E56003EEC0B /* Post.swift in Sources */,
 			);

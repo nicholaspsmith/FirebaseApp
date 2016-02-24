@@ -17,6 +17,7 @@ let KEY_UID = "uid"
 
 // Segues
 let SEGUE_LOGGED_IN = "loggedIn"
+let SEGUE_CREATE_USER = "createUser"
 
 // Status Codes
 let STATUS_ACCOUNT_NONEXIST = -8

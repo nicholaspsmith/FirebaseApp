@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            print(NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID))
             self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
         }
     }
@@ -67,31 +68,14 @@ class ViewController: UIViewController {
                 if error != nil {
                     // There was an error logging in
                     if error.code == STATUS_ACCOUNT_NONEXIST {
-                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
-                            
-                            if error != nil {
-                                self.showErrorAlert("Could not create account", msg: "Problem creating account. Try a different email or password")
-                            } else {
-                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                
-                                
-                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {
-                                    err, authData in
-                                    
-                                    let user = ["provider": authData.provider!]
-                                    DataService.ds.createFirebaseUser(authData.uid, user: user)
-                                    
-                                })
-                                
-                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
-                            }
-                            
-                        })
+                        // Need to create this account
+                        self.performSegueWithIdentifier(SEGUE_CREATE_USER, sender: nil)
+                        
                     } else {
                         self.showErrorAlert("Could not log in", msg: "Invalid username or password")
                     }
                 } else {
-                    // There was no error logging in. Show next screen.
+                    // Login successful. Show next screen.
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
                 
