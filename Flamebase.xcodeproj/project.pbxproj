@@ -49,7 +49,7 @@
 		015CA1D01C7629B100670E92 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		01B388F21C7E179600F7FD77 /* CreateUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
-		AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB529B8F1C61AD1900ACE70D /* Flamebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB529B921C61AD1900ACE70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB529B941C61AD1900ACE70D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB529B971C61AD1A00ACE70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		AB529B901C61AD1900ACE70D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */,
+				AB529B8F1C61AD1900ACE70D /* Flamebase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB529B8E1C61AD1900ACE70D /* FirebaseApp */ = {
+		AB529B8E1C61AD1900ACE70D /* Flamebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB529BA11C61AD1A00ACE70D /* Build configuration list for PBXNativeTarget "FirebaseApp" */;
+			buildConfigurationList = AB529BA11C61AD1A00ACE70D /* Build configuration list for PBXNativeTarget "Flamebase" */;
 			buildPhases = (
 				7289D6F93A02140A0E61233C /* Check Pods Manifest.lock */,
 				AB529B8B1C61AD1900ACE70D /* Sources */,
@@ -213,9 +213,9 @@
 			);
 			dependencies = (
 			);
-			name = FirebaseApp;
+			name = Flamebase;
 			productName = FirebaseApp;
-			productReference = AB529B8F1C61AD1900ACE70D /* FirebaseApp.app */;
+			productReference = AB529B8F1C61AD1900ACE70D /* Flamebase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB529B8A1C61AD1900ACE70D /* Build configuration list for PBXProject "FirebaseApp" */;
+			buildConfigurationList = AB529B8A1C61AD1900ACE70D /* Build configuration list for PBXProject "Flamebase" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -246,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB529B8E1C61AD1900ACE70D /* FirebaseApp */,
+				AB529B8E1C61AD1900ACE70D /* Flamebase */,
 			);
 		};
 /* End PBXProject section */
@@ -443,6 +443,7 @@
 			baseConfigurationReference = 988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +453,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholaspsmith.FirebaseApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Flamebase;
 			};
 			name = Debug;
 		};
@@ -461,6 +462,7 @@
 			baseConfigurationReference = FF285FBAD35554F06A6B0935 /* Pods-FirebaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,14 +472,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholaspsmith.FirebaseApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Flamebase;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB529B8A1C61AD1900ACE70D /* Build configuration list for PBXProject "FirebaseApp" */ = {
+		AB529B8A1C61AD1900ACE70D /* Build configuration list for PBXProject "Flamebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB529B9F1C61AD1A00ACE70D /* Debug */,
@@ -486,7 +488,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB529BA11C61AD1A00ACE70D /* Build configuration list for PBXNativeTarget "FirebaseApp" */ = {
+		AB529BA11C61AD1A00ACE70D /* Build configuration list for PBXNativeTarget "Flamebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB529BA21C61AD1A00ACE70D /* Debug */,
