@@ -23,12 +23,12 @@
 		015CA1CE1C754FFF00670E92 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015CA1CB1C754FFF00670E92 /* Bolts.framework */; };
 		015CA1D11C7629B100670E92 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015CA1D01C7629B100670E92 /* DataService.swift */; };
 		01B388F31C7E179600F7FD77 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B388F21C7E179600F7FD77 /* CreateUserVC.swift */; };
-		3DDB6E7FE504C7A4A71D6D52 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B604E625B5886B0B74D2D606 /* Pods_FirebaseApp.framework */; };
 		AB529B931C61AD1900ACE70D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B921C61AD1900ACE70D /* AppDelegate.swift */; };
 		AB529B951C61AD1900ACE70D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB529B941C61AD1900ACE70D /* ViewController.swift */; };
 		AB529B981C61AD1A00ACE70D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529B961C61AD1A00ACE70D /* Main.storyboard */; };
 		AB529B9A1C61AD1A00ACE70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB529B991C61AD1A00ACE70D /* Assets.xcassets */; };
 		AB529B9D1C61AD1A00ACE70D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529B9B1C61AD1A00ACE70D /* LaunchScreen.storyboard */; };
+		B12E33D583515AA321E5ADD2 /* Pods_Flamebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7772AF431F0AA580724B76B /* Pods_Flamebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		015CA1CB1C754FFF00670E92 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		015CA1D01C7629B100670E92 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		01B388F21C7E179600F7FD77 /* CreateUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
-		988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		33D79ADEFFDDEC6A2C0827EA /* Pods-Flamebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flamebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flamebase/Pods-Flamebase.release.xcconfig"; sourceTree = "<group>"; };
 		AB529B8F1C61AD1900ACE70D /* Flamebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB529B921C61AD1900ACE70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB529B941C61AD1900ACE70D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +57,8 @@
 		AB529B9C1C61AD1A00ACE70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB529B9E1C61AD1A00ACE70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B604E625B5886B0B74D2D606 /* Pods_FirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF285FBAD35554F06A6B0935 /* Pods-FirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
+		D2B91B70CB64094534E79427 /* Pods-Flamebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flamebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flamebase/Pods-Flamebase.debug.xcconfig"; sourceTree = "<group>"; };
+		D7772AF431F0AA580724B76B /* Pods_Flamebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flamebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +69,7 @@
 				015CA1CE1C754FFF00670E92 /* Bolts.framework in Frameworks */,
 				015CA1CC1C754FFF00670E92 /* FBSDKLoginKit.framework in Frameworks */,
 				015CA1CD1C754FFF00670E92 /* FBSDKCoreKit.framework in Frameworks */,
-				3DDB6E7FE504C7A4A71D6D52 /* Pods_FirebaseApp.framework in Frameworks */,
+				B12E33D583515AA321E5ADD2 /* Pods_Flamebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,17 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				B604E625B5886B0B74D2D606 /* Pods_FirebaseApp.framework */,
+				D7772AF431F0AA580724B76B /* Pods_Flamebase.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		67DB9F677B446E6BD8CC1BF3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */,
-				FF285FBAD35554F06A6B0935 /* Pods-FirebaseApp.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		AB529B861C61AD1900ACE70D = {
@@ -123,8 +116,8 @@
 			children = (
 				AB529B911C61AD1900ACE70D /* FirebaseApp */,
 				AB529B901C61AD1900ACE70D /* Products */,
-				67DB9F677B446E6BD8CC1BF3 /* Pods */,
 				6308607933676E6F1BFA6B0A /* Frameworks */,
+				F33BD974CCC48629B76B647D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +186,15 @@
 				015CA1BA1C72DF3B00670E92 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		F33BD974CCC48629B76B647D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2B91B70CB64094534E79427 /* Pods-Flamebase.debug.xcconfig */,
+				33D79ADEFFDDEC6A2C0827EA /* Pods-Flamebase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flamebase/Pods-Flamebase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6BDB06AB771EFBCA133E2F4C /* Embed Pods Frameworks */ = {
@@ -296,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flamebase/Pods-Flamebase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7289D6F93A02140A0E61233C /* Check Pods Manifest.lock */ = {
@@ -395,7 +397,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -433,6 +435,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -440,7 +443,7 @@
 		};
 		AB529BA21C61AD1A00ACE70D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 988A31C41B3C11A53851E153 /* Pods-FirebaseApp.debug.xcconfig */;
+			baseConfigurationReference = D2B91B70CB64094534E79427 /* Pods-Flamebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -450,7 +453,6 @@
 					"$(PROJECT_DIR)/FirebaseApp",
 				);
 				INFOPLIST_FILE = FirebaseApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholaspsmith.FirebaseApp;
 				PRODUCT_NAME = Flamebase;
@@ -459,7 +461,7 @@
 		};
 		AB529BA31C61AD1A00ACE70D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF285FBAD35554F06A6B0935 /* Pods-FirebaseApp.release.xcconfig */;
+			baseConfigurationReference = 33D79ADEFFDDEC6A2C0827EA /* Pods-Flamebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -469,7 +471,6 @@
 					"$(PROJECT_DIR)/FirebaseApp",
 				);
 				INFOPLIST_FILE = FirebaseApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholaspsmith.FirebaseApp;
 				PRODUCT_NAME = Flamebase;

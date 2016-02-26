@@ -3,7 +3,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'FirebaseApp' do
+target 'Flamebase' do
   pod 'Firebase', '>= 2.5.0'
   pod 'Alamofire', '~> 3.0'
 end
