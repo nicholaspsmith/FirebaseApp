@@ -49,6 +49,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                         
                         let key = snap.key
                         let post = Post(postKey: key, dictionary: postDict)
+                        
+                        print(post)
                         self.posts.append(post)
                         
                     }
@@ -156,8 +158,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     func postToFirebase(imgUrl: String?) {
+        
         var post: Dictionary<String, AnyObject> = [
             "description": postField.text!,
+            "user": DataService.ds.CURRENT_UID,
             "likes": 0
         ]
         

@@ -55,6 +55,7 @@ class ViewController: UIViewController {
                         DataService.ds.createFirebaseUser(authData.uid, user: user)
                         
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
                     
@@ -77,6 +78,7 @@ class ViewController: UIViewController {
                         self.performSegueWithIdentifier(SEGUE_CREATE_USER, sender: nil)
                         
                     } else {
+                        print(error.code)
                         self.showErrorAlert("Could not log in", msg: "Invalid username or password")
                     }
                 } else {

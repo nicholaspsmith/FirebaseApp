@@ -17,6 +17,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var likeImg: UIImageView!
+    @IBOutlet weak var userDisplayName: UILabel!
     
     var post: Post!
     var request: Request? // defined in Firebase
@@ -46,6 +47,16 @@ class PostCell: UITableViewCell {
         
         self.descriptionText.text = post.postDescription
         self.likesLbl.text = "\(post.likes)"
+        
+        if post.username != "..." {
+            self.userDisplayName.text = post.username
+        } else {
+            DataService.ds.REF_USERS.childByAppendingPath(post.user).observeEventType(.Value, withBlock: { snapshot in
+                self.userDisplayName.text = snapshot.value.objectForKey("username") as! String
+                }, withCancelBlock: { error in
+                    print(error.description)
+            })
+        }
         
         if post.imageUrl != nil {
             
