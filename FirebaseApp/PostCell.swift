@@ -75,7 +75,7 @@ class PostCell: UITableViewCell {
 
         likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
             
-            if let doesNotExist = snapshot.value as? NSNull {
+            if let _ = snapshot.value as? NSNull {
                 self.likeImg.image = UIImage(named: "heart-empty")
             } else {
                 self.likeImg.image = UIImage(named: "heart-full")
@@ -87,7 +87,7 @@ class PostCell: UITableViewCell {
     func likeTapped(sender: UITapGestureRecognizer) {
         likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
             
-            if let doesNotExist = snapshot.value as? NSNull {
+            if let _ = snapshot.value as? NSNull {
                 self.likeImg.image = UIImage(named: "heart-full")
                 self.post.adjustLikes(true)
                 self.likeRef.setValue(true)
